@@ -1,0 +1,14 @@
+.bg-lightviolet {
+	background-color: rgb(213, 166, 233);
+}
+
+.jumbotron {
+	background-image: url("../images/hero.jpg");
+	background-size: cover;
+	height: 90vh;
+}
+
+#jumbotron-text {
+	background-color: rgb(213, 166, 233);
+	opacity: 0.6;
+}
