@@ -5,10 +5,15 @@
 .jumbotron {
 	background-image: url("../images/hero.jpg");
 	background-size: cover;
+	background-position: center;
 	height: 90vh;
 }
 
 #jumbotron-text {
 	background-color: rgb(213, 166, 233);
 	opacity: 0.6;
+}
+
+.bg-opacity-dark{
+	background-color: rgba(0, 0, 0, 0.5);
 }
