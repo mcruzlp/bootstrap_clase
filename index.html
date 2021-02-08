@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rock & Roll</title>
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/estilo.css">
 
 </head>
+
 <body class="bg-dark">
 
   <div id="wrapper" class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-lightviolet">
+
+    <!-------------------- NAVBAR ------------------------------>
+    <nav class="navbar navbar-expand-lg navbar-light bg-lightviolet sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"><img width="32" src="images/favicon.png" alt="Larga vida al Rock&Roll"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -24,18 +29,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#intro">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Galería</a>
+              <a class="nav-link active" aria-current="page" href="#hero">Inicio</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Historia
-              </a>
+              <a class="nav-link dropdown-toggle" href="#intro" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Introducción</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Comienzos</a></li>
+                <li><a class="dropdown-item" href="#historia">Historia</a></li>
                 <li><a class="dropdown-item" href="#">Años 70</a></li>
                 <li>
                   <hr class="dropdown-divider">
@@ -43,12 +43,15 @@
                 <li><a class="dropdown-item" href="#">Actualidad</a></li>
               </ul>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Galería</a>
+            </li>
             <!--
               <li class="nav-item">
               <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
             </li>
             -->
-            
+
           </ul>
           <!-- botón de búsqueda
           <form class="d-flex">
@@ -58,35 +61,106 @@
         </div>
       </div>
     </nav>
-    <section id="intro" class="mb-0">
+
+    <!-------------------- INICIO -------------------------->
+    <section id="hero" class="mb-0">
       <div class="jumbotron">
         <div id="jumbotron-text" class="p-5 w-50">
           <h1 class="display-4">Hello, world!</h1>
-          <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured
-          content or information.</p>
+          <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
+            featured
+            content or information.</p>
           <hr class="my-4">
           <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
           <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
         </div>
       </div>
     </section>
-    <section class="bg-secondary p-5 mt-0">
-      <h1>Título de sección</h1>
+    <!-------------------- INTRODUCCIÓN -------------------------->
+    <section class="bg-secondary p-5 mt-0" id="intro">
+      <h1>El rey del Rock & Roll</h1>
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-6 col-lg-4">
             <img class="w-100 p-3" src="images/firma.png" alt="">
           </div>
           <div class="col-md-3 col-lg-4">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, at? Dolorum, iste, alias dolorem nostrum architecto dolore eum deleniti in eius dignissimos ut voluptas labore hic placeat sint iusto at!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, at? Dolorum, iste, alias dolorem
+            nostrum architecto dolore eum deleniti in eius dignissimos ut voluptas labore hic placeat sint iusto at!
           </div>
           <div class="col-md-3 col-lg-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, adipisci! Fuga nihil odit nostrum necessitatibus consectetur consequuntur et commodi quas voluptatum! Sit possimus minima, laborum enim ipsam iure quas maiores.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, adipisci! Fuga nihil odit nostrum
+            necessitatibus consectetur consequuntur et commodi quas voluptatum! Sit possimus minima, laborum enim ipsam
+            iure quas maiores.
           </div>
         </div>
       </div>
     </section>
-    <section>
+
+    <!--card deck (mazo de cartas) con foto, texto y botón -->
+    <!------------------- HISTORIA ---------------------------->
+    <section id="historia">
+      <h1>Historia</h1>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-6 col-lg-2">
+            <div class="card">
+              <img src="images/comienzos1.jpg" class="card-img-top" alt="comienzos">
+              <div class="card-body">
+                <h5 class="card-title">Comienzos</h5>
+                <p class="card-text">Nació en Tupelo, Misisipi, pero cuando tenía 13 años, se mudó junto a su familia a
+                  Memphis, Tennessee, donde en 1954 comenzó su carrera artística cuando el dueño de Sun Records, Sam
+                  Phillips, vio en él la manera de expandir la música afroamericana. Acompañado por el guitarrista
+                  Scotty Moore y el contrabajista Bill Black, fue uno de los creadores del rockabilly, un estilo de
+                  tempo rápido impulsado por un constante ritmo que consiste en una fusión de música country y rhythm
+                  and blues.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-2">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-2">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-2">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section></section>
+    <!------------------- GALERIA ---------------------------->
+    <section id="galeria">
       <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -126,15 +200,20 @@
         </a>
       </div>
     </section>
-    <section></section>
-    <section></section>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+    crossorigin="anonymous"></script>
 
 
-  
+
 </body>
+
 </html>
